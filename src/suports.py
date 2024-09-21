@@ -3,7 +3,6 @@ from selenium import webdriver
 import pytest
 
 from pages.home_page import HomePage
-from pages.productsPage import ProductsPage
 
 url_demo = 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager'
 
