@@ -1,1 +1,6 @@
-.idea/
+.idea
+venv
+web/tests/__pycache__/
+web/pages/__pycache__/
+web/__pycache__/
+
