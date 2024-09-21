@@ -5,7 +5,6 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 class Base:
-    # C:\CesarSchoolTesteSistema\projeto_final_testes_sistema\Testes_Sistema\web\tests\web\driver\chromedriver.exe
     cwd = os.getcwd()
     baseCwd = os.path.dirname(cwd)
     def __init__(self, driver, browser=None):
