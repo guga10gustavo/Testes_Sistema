@@ -3,7 +3,7 @@ from web.pages.manager_page import ManagerPage
 
 class Test_CT09:
 
-    @pytest.mark.parametrize('all_browser', ['chrome'])
+    @pytest.mark.parametrize('all_browser', ['chrome', 'edge'])
     def test_first_name_order_list(self, run_all_browser):
         home_p = run_all_browser
         home_p.wait_home_buttons_be_visible()

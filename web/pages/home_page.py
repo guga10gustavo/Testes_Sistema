@@ -9,6 +9,7 @@ class HomePage(Base):
     managerBtn = '.center button[ng-click="manager()"]'
     base_Url = 'https://globalsqa.com/angularJs-protractor/BankingProject/#/login'
     home_btns = (By.CSS_SELECTOR, managerBtn)
+    homeBtn = (By.CSS_SELECTOR, '*[class = "btn home"]')
 
     def __init__(self, browser):
         super(HomePage, self).__init__(driver=None, browser=browser)
@@ -23,3 +24,6 @@ class HomePage(Base):
 
     def wait_home_buttons_be_visible(self):
         self.wait_element(self.home_btns)
+
+    def home_Page(self):
+        self.driver.find_element(*self.homeBtn).click()

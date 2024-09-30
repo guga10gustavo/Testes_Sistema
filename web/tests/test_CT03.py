@@ -4,8 +4,8 @@ from web.pages.manager_page import ManagerPage
 
 class Test_CT03:
 
-    @pytest.mark.parametrize('all_browser', ['chrome'])
-    def test_search_customer_name(self, run_all_browser):
+    @pytest.mark.parametrize('all_browser', ['chrome', 'edge'])
+    def test_search_customer_name_in_the_list(self, run_all_browser):
         home_p = run_all_browser
         home_p.wait_home_buttons_be_visible()
         home_p.manager_Page()
